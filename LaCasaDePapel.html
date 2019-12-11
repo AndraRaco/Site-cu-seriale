@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista Seriale</title>
+    <base href="file:///D:/ANUL%202/TehniciWeb/Proiect/">
+    <link rel="stylesheet" type="text/css" href="Utile/mystyle4.css">
+    <script src="Utile/pr4.js"></script>
+</head>
+
+<body id="body" onload="FuncScroll();" onload="Schimb_Poza();">
+    <!--Top Buton-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!---->
+    <header id="header">
+        <h1>La Casa de Papel</h1>
+    </header>
+    <img id="Coperta" alt="IMG" src='Utile/CP2.jpg'>
+
+    <!---->
+    <div class="main" id="Meniu">
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="ListaSeriale.html">Home</a>
+            <a href="LaCasaDePapel.html#Descriere">Descriere</a>
+            <a href="LaCasaDePapel.html#Actori">Actori</a>
+            <div class="dropdown">
+                <button class="dropbtn">Imagini si Trailer
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="LaCasaDePapel.html#Galerie">Galerie</a>
+                    <a href="LaCasaDePapel.html#Trailer">Trailer</a>
+                </div>
+            </div>
+            <a href="LaCasaDePapel.html#Site">Site-uri</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <!---->
+    <section id="Descriere">
+        <h2>Descriere</h2>
+        <p id="paragraf">Un om misterios, care
+            se numește El Profesor („Profesorul”),
+            planifică cea mai mare lovitură
+            dată vreodată. Pentru a
+            realiza planul ambițios, recrutează o bandă de opt persoane cu anumite abilități care nu au nimic de
+            pierdut. Scopul
+            este acela de a intra în Monetăria Regală a Spaniei, astfel încât să poată tipări 2,4 miliarde de euro.
+            Pentru a face
+            acest lucru, au nevoie de unsprezece zile de izolare, timp în care vor trebui să se ocupe de șaizeci și
+            șapte de
+            ostatici și de forțele de elită ale Poliției. În partea a 3-a banda se unește pentru a salva un membru
+            capturat.</p>
+    </section>
+
+    <!---->
+    <div id="Actori">
+        <h2>Actori Principali</h2>
+        <ul>
+            <li>Úrsula Corberó în rolul Tokio</li>
+            <li>Itziar Ituño în rolul Raquel Murillo</li>
+            <li>Álvaro Morte în rolul El Profesor</li>
+            <li>Paco Tous în rolul Moscú</li>
+            <li>Alba Flores în rolul Nairobi</li>
+            <li>Miguel Herrán în rolul Río</li>
+            <li>Pedro Alonso în rolul Berlín</li>
+            <li>Kiti Mánver în rolul mama lui Raquel</li>
+            <li>Enrique Arce în rolul Arturo Román</li>
+            <li>María Pedraza în rolul Alison Parker</li>
+            <li>Anna Gras în rolul Mercedes</li>
+            <li>Fernando Soto în rolul Ángel</li>
+            <li>Darko Peric în rolul Helsinki</li>
+            <li>Juan Fernández în rolul Coronel Prieto</li>
+            <li>Jaime Lorente în rolul Denver</li>
+            <li>Fran Morcillo în rolul Pablo</li>
+            <li>Esther Acebo în rolul Mónica Gaztambide</li>
+            <li>Clara Alvarado în rolul Ariadna</li>
+        </ul>
+    </div>
+
+    <!--Galerie de poze-->
+    <section id="Galerie">
+        <h2>Poze din Serial</h2>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="Utile/CPS2.jpg" alt="La Casa de Papel" style="width:100%" onload="showSlides(1);">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="Utile/CPS1.jpg" alt="La Casa de Papel" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="Utile/CPS3.jpg" alt="La Casa de Papel" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="Utile/CPS4.jpg" alt="La Casa de Papel" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="Utile/CPS5.jpg" alt="La Casa de Papel" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="Utile/CPS6.jpg" alt="La Casa de Papel" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!--Imaginile de thumbnail-->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" alt="La Casa de Papel" src="Utile/CPS2.jpg" style="width:100%"
+                        onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="La Casa de Papel" src="Utile/CPS1.jpg" style="width:100%"
+                        onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="La Casa de Papel" src="Utile/CPS3.jpg" style="width:100%"
+                        onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="La Casa de Papel" src="Utile/CPS4.jpg" style="width:100%"
+                        onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="La Casa de Papel" src="Utile/CPS5.jpg" style="width:100%"
+                        onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="La Casa de Papel" src="Utile/CPS6.jpg" style="width:100%"
+                        onclick="currentSlide(6)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---->
+    <section id="Trailer">
+        <h2>Trailer</h2>
+        <video controls>
+            <source src="Utile/videoCP.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!---->
+    <section id="Site">
+        <h2>Site-uri</h2>
+        <p id="NavP">Pentru mai multe informatii apsati pe site-ul dorit.</p>
+        <ul class="Nav">
+            <li><a href="https://www.netflix.com/nl-ro/title/80192098">Netflix</a> </li>
+            <li><a href="https://www.imdb.com/title/tt6468322/">IMDB</a> </li>
+            <li><a href="https://ro.wikipedia.org/wiki/La_casa_de_papel">Wikipedia</a></li>
+        </ul>
+    </section>
+
+    <!---->
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Get Away with Murder</title>
+    <base href="file:///D:/ANUL%202/TehniciWeb/Proiect/">
+    <link rel="stylesheet" type="text/css" href="Utile/mystyle1.css">
+    <script src="Utile/pr1.js"></script>
+</head>
+
+<body onload="FuncScroll();">
+    <!--Top Buton-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!---->
+    <header id="header">
+        <h1>How to Get Away with Murder</h1>
+    </header>
+    <img id="Coperta" alt="IMG" onclick="alert('How to Get Away with Murder'); this.src='Utile/fig1(2).jpg'"
+        src='Utile/fig1.jpg'>
+
+    <!---->
+
+    <div class="main" id="Meniu">
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="ListaSeriale.html">Home</a>
+            <a href="HowtoGetAwayWithMurder.html#Descriere">Descriere</a>
+            <div class=" dropdown">
+                <button class="dropbtn">Actori Principali
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="HowtoGetAwayWithMurder.html#Tabel_Actori">Tabel Actori</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Imagini si Trailer
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="HowtoGetAwayWithMurder.html#Galerie">Galerie</a>
+                    <a href="HowtoGetAwayWithMurder.html#Trailer">Trailer</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <!---->
+
+    <div class="main" id="Descriere">
+        <h2>Descriere</h2>
+        <p><span>Viola Davis</span> este Annalise Keating, profesor universitar celebru pentru cazurile fără speranță
+            câștigate ca avocat al apărării. Înconjurată de studenți ambițioși, Keating se va trezi implicată într-un
+            caz de crimă,
+            care va duce la o investigație paralelă cu cea a autorităților. Poate că profesoara și studenții gândesc
+            ireproșabil în teorie, dar cum se vor descurca ei în practică?</p>
+    </div>
+
+    <section id="Actori">
+        <h2>Actori Principali</h2>
+        <table id="Tabel_Actori">
+            <tr>
+                <th>Actor</th>
+                <th>Personaj</th>
+            </tr>
+            <tr>
+                <td>Viola Davis</td>
+                <td>Annalise Keating</td>
+            </tr>
+            <tr>
+                <td>Billy Brown</td>
+                <td>Nate Lahey</td>
+            </tr>
+            <tr>
+                <td>Jack Falahee</td>
+                <td>Connor Walsh</td>
+            </tr>
+            <tr>
+                <td>Aja Naomi King</td>
+                <td>Michaela Pratt</td>
+            </tr>
+            <tr>
+                <td>Matt McGorry</td>
+                <td>Asher Millstone</td>
+            </tr>
+            <tr>
+                <td>Charlie Weber</td>
+                <td>Frank Delfino</td>
+            </tr>
+            <tr>
+                <td>Liza Weil</td>
+                <td>Bonnie Winterbottom</td>
+            </tr>
+            <tr>
+                <td>Conrad Ricamora</td>
+                <td>Oliver Hampton</td>
+            </tr>
+            <tr>
+                <td>Karla Souza</td>
+                <td>Laurel Castillo</td>
+            </tr>
+            <tr>
+                <td>Alfred Enoch</td>
+                <td>Wes Gibbins</td>
+            </tr>
+        </table>
+    </section>
+
+    <!---->
+
+    <section id="Galerie">
+        <h2>Poze din Serial</h2>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="Utile/sld1.jpg" alt="How to Get Away with Murder" style="width:100%" onload="showSlides(1);">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="Utile/sld2.jpg" alt="How to Get Away with Murder" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="Utile/sld3.jpeg" alt="How to Get Away with Murder" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="Utile/sld4.jpg" alt="How to Get Away with Murder" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="Utile/sld5.jpg" alt="How to Get Away with Murder" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="Utile/sld6.jpg" alt="How to Get Away with Murder" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!--Imaginile de thumbnail-->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" alt="How to Get Away with Murder" src="Utile/sld1.jpg" style="width:100%"
+                        onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="How to Get Away with Murder" src="Utile/sld2.jpg" style="width:100%"
+                        onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="How to Get Away with Murder" src="Utile/sld3.jpeg" style="width:100%"
+                        onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="How to Get Away with Murder" src="Utile/sld4.jpg" style="width:100%"
+                        onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="How to Get Away with Murder" src="Utile/sld5.jpg" style="width:100%"
+                        onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" alt="How to Get Away with Murder" src="Utile/sld6.jpg" style="width:100%"
+                        onclick="currentSlide(6)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---->
+
+    <section id="Trailer">
+        <h2>Trailer</h2>
+        <video controls>
+            <source src="Utile/video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!---->
+    <section id="iframeSite">
+        <h2>Site cu mai multe informatii</h2>
+        <iframe src="https://en.wikipedia.org/wiki/How_to_Get_Away_with_Murder" name="iframe_a"></iframe>
+    </section>
+</body>
+
+</html>

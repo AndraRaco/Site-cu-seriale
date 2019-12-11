@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista Seriale</title>
+    <base href="file:///D:/ANUL%202/TehniciWeb/Proiect/">
+    <link rel="stylesheet" type="text/css" href="Utile/mystyle3.css">
+    <script src="Utile/pr3.js"></script>
+</head>
+
+<body id="body" onload="FuncScroll();">
+    <!--Top Buton-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!---->
+    <header id="header">
+        <h1>The Good Doctor</h1>
+    </header>
+    <img id="Coperta" alt="IMG" src='Utile/GD2.png'>
+
+    <!---->
+
+    <div class="main" id="Meniu">
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="ListaSeriale.html">Home</a>
+            <a href="TheGoodDoctor.html#Descriere">Descriere</a>
+            <div class=" dropdown">
+                <button class="dropbtn">Actori si Personaje
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="TheGoodDoctor.html#Actori">Actori Principali</a>
+                    <a href="TheGoodDoctor.html#Personaje">Joc cu Personaje</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Imagini si Trailer
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="TheGoodDoctor.html#Galerie">Galerie</a>
+                    <a href="TheGoodDoctor.html#Trailer">Trailer</a>
+                </div>
+            </div>
+            <a href="TheGoodDoctor.html#Site">Site-uri</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <!---->
+    <div id="Descriere">
+        <h1>Descriere</h1>
+        <p id="paragraf"><span>Shaun (Freddie Highmore)</span> are autism și inteligența unui savant și a visat de mic
+            să fie doctor.
+            Însă, odată ajuns pe holurile prestigiosului
+            spital St. Bonaventure, va avea de dus o luptă grea pentru a-și îndeplini visul și pentru a salva vieți, o
+            luptă cu
+            scepticismul și prejudecățile colegilor și membrilor consiliului de administrație al spitalului.</p>
+    </div>
+
+    <!---->
+    <div id="Actori">
+        <h2>Actori Principali</h2>
+        <ol>
+            <li>Freddie Highmore</li>
+            <li>Nicholas Gonzalez</li>
+            <li>Antonia Thomas</li>
+            <li>Chuku Modu</li>
+            <li>Beau Garrett</li>
+            <li>Hill Harper</li>
+            <li>Richard Schiff</li>
+        </ol>
+
+
+        <aside>
+            <p><span>Freddie Highmore</span> nominalizat la Globul de Aur pentru cel mai bun actor de
+                televiziune (drama).</p>
+            <img id="gif" alt="IMG" src="Utile/gif.gif">
+        </aside>
+    </div>
+
+    <!---->
+    <div id="Personaje">
+        <h2>Personaje Preferate-Joc</h2>
+        <p>Stergeti personajul care nu va place din urmatoarea lista.</p>
+        <div class="imgbox" id="imgbox1">Dr. Shaun Murphy<br>
+            <img src="Utile/GD3.jpg" alt="Dr. Shaun Murphy" style="width:100%">
+            <button onclick="removeElement()">Remove</button>
+        </div>
+
+        <div class="imgbox" id="imgbox2">Dr. Carly Lever<br>
+            <img src="Utile/GD4.jpg" alt="Dr. Carly Lever" style="width:100%">
+            <button onclick="removeElement()">Remove</button>
+        </div>
+
+        <div class="imgbox">Dr. Claire Browne<br>
+            <img src="Utile/GD5.jpg" alt="Dr. Claire Browne" style="width:100%">
+            <button onclick="removeElement()">Remove</button>
+        </div>
+        <div class="imgbox">Lea Dilallo<br>
+            <img src="Utile/GD6.jpg" alt="Lea Dilallo" style="width:100%">
+            <button onclick="removeElement()">Remove</button>
+        </div>
+
+        <div id="Reset">
+            <p><br><br>
+
+
+                Reseteaza daca vrei sa joci din nou. <button onclick="resetElement()">Reset</button></p>
+        </div>
+
+        <!--Galerie de poze-->
+        <section id="Galerie">
+            <h2>Poze din Serial</h2>
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="Utile/GDS2.jpg" alt="The Good Doctor" style="width:100%" onload="showSlides(1);">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="Utile/GDS1.jpg" alt="The Good Doctor" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="Utile/GDS3.jpg" alt="The Good Doctor" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="Utile/GDS4.jpg" alt="The Good Doctor" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="Utile/GDS5.jpg" alt="The Good Doctor" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="Utile/GDS6.jpg" alt="The Good Doctor" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!--Imaginile de thumbnail-->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" alt="The Good Doctor" src="Utile/GDS2.jpg" style="width:100%"
+                            onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" alt="The Good Doctor" src="Utile/GDS1.jpg" style="width:100%"
+                            onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" alt="The Good Doctor" src="Utile/GDS3.jpg" style="width:100%"
+                            onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" alt="The Good Doctor" src="Utile/GDS4.jpg" style="width:100%"
+                            onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" alt="The Good Doctor" src="Utile/GDS5.jpg" style="width:100%"
+                            onclick="currentSlide(5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" alt="The Good Doctor" src="Utile/GDS6.jpg" style="width:100%"
+                            onclick="currentSlide(6)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---->
+        <section id="Trailer">
+            <h2>Trailer</h2>
+            <video controls>
+                <source src="Utile/videoGD.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!---->
+        <section id="Site">
+            <h2>Site-uri</h2>
+            <p id="NavP">Pentru mai multe informatii apsati pe site-ul dorit.</p>
+            <nav id="Nav">
+                <a href="https://abc.com/shows/the-good-doctor">ABC</a> |
+                <a href="https://www.imdb.com/title/tt6470478/">IMDB</a> |
+                <a href="https://en.wikipedia.org/wiki/The_Good_Doctor_(TV_series)">Wikipedia</a>
+            </nav>
+            <p>Pentru a deschide Wikipedia in pagina apasati aici:
+                <button onclick="Site_oficial()">
+                    Site oficial
+                </button>
+            </p>
+        </section>
+
+
+    </div>
+
+
+</body>
+
+</html>

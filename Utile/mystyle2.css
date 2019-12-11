@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#Animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-timing-function:linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {left: 0%;}
+  to {left: 100%;}
+  0%   {background-color:maroon;}
+  25%  {background-color:blue; }
+  50%  {background-color:grey; }
+  75%  {background-color:darkblue; }
+  100% {background-color:darkred;}
+}
+
+#header>h1
+{
+    font-size: 350%;
+    color: #220808;
+    text-align:center;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#Coperta
+{
+    width:100%;
+    padding-left: 10px;
+}
+
+h2
+{
+    font-size: 200%;
+    color: #220808;
+    margin-left: 20px;
+}
+
+p
+{
+    color:black;
+    font-family:"Times New Roman";
+    font: bold;
+    font-size: 135%;
+    text-indent: 10%;
+    text-align: justify;
+}
+
+/*FlexBox Lista seriale----------------------------------------------*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    align-items: left;
+    align-items: stretch;
+    align-items: baseline;
+    align-content: space-between;
+}
+
+.flex-container > div {
+    display: inline-block;
+    text-align: top;
+    width: 33%;
+}
+/*-------------------------------------------------------------------*/
+#verticalNav
+{
+    flex-direction: column;
+    list-style-type:none;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #220808;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+h3
+{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+li >a
+{
+    color: white;
+    font-size: 1.25em;
+}
+
+figcaption >a
+{
+    color: #220808;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#Sticky
+{
+    position: sticky;
+    top: 0;
+}
+
+iframe
+{
+    width:100%;
+    height: 600px;
+}
